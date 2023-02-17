@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.TreeSet;
+
 // public class exceptionsecond {
 //     public static void main(String[] args) {
 //         int balance = 5000;
@@ -18,29 +21,25 @@
 //     }
 
 // }
-
-
-
-class Splendor{
-    public void mileage(){
-        System.out.println("60Km");
-    }
-    public void color(){
-        System.out.println("Black with violet");
-    }
-    public void feature(){
-        System.out.println("100 cc");
-    }
-}
-
-class SplendorPlus extends Splendor{
-    public void mileage(){
-        System.out.println("65km");
-    }
-}
-
+// hashSet & TreeSet example
 public class exceptionsecond{
     public static void main(String[] args) {
-        
+        HashSet<Integer> hs = new HashSet<Integer>();
+        hs.add(10);
+        hs.add(30);
+        hs.add(33);
+        hs.add(1);
+        hs.add(88);
+        hs.add(1);
+        System.out.println(hs);
+        TreeSet<Integer> ts = new TreeSet<Integer>();
+
+        ts.add(30);
+        ts.add(33);
+        ts.add(1);
+        ts.add(10);
+        ts.add(88);
+        ts.add(1);
+        System.out.println(ts);
     }
 }
